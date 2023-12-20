@@ -18,7 +18,7 @@ const createDiary = async(req,res)=>{
             })
         }
         else{
-            res.status(400).send({
+            res.status(404).send({
                 message:"Title,date,description is required"
             })
         }

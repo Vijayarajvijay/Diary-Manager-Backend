@@ -1,6 +1,6 @@
 import express from 'express'
 import userRoutes from './userRoutes.js'
-import DiaryRoutes from './diaryRoutes.js'
+import diaryRoutes from './diaryRoutes.js'
 
 const router = express.Router()
 
@@ -10,6 +10,6 @@ router.get("/", (req, res) => {
   });
 
 router.use('/user',userRoutes)
-router.use('/diary',DiaryRoutes)
+router.use('/diary',diaryRoutes)
 
 export default router
