@@ -66,7 +66,7 @@ const editDiary = async(req,res)=>{
 const getDiarysById = async(req,res)=>{
 try {
     const diaryId = req.params.id
-    console.log(diaryId)
+   
     if(diaryId)
     {
        
