@@ -66,20 +66,24 @@ const editDiary = async(req,res)=>{
 const getDiarysById = async(req,res)=>{
 try {
     const diaryId = req.params.id
+    console.log(diaryId)
     if(diaryId)
     {
+       
         let diary = await diaryModel.findById(req.params.id)
-        res.statusf(200).send({
+        res.status(200).send({
             message:"diary fetched successfully",
             diary
         })
     }
     else{
+       
         res.status(400).send({
             message:"diary id not found"
         })
     }
 } catch (error) {
+   
     res.status(500).send({
         message:"Internal Server Error",
         error:error.message
@@ -144,27 +148,30 @@ const deleteDiary = async (req, res) => {
     }
 };
 
-const searchDiaryByName = async (req, res) => {
-    try {
-      const { title } = req.query;
-      if (!title) {
-        return res.status(400).send({ message: 'Diary title is required for searching' });
-      }
+// const searchDiaryByName = async (req, res) => {
+//     try {
+//       const { title } = req.query // Retrieve the title from query parameters
+//      console.log(title)
+//       if (!title) {
+//         return res.status(400).send({ message: 'Diary title is required for searching' });
+//       }
   
-      const diary = await diaryModel.find({ title: { $regex: new RegExp(title, 'i') } });
-  
-      res.status(200).send({
-        message: `Diaries matching the title ${title} fetched successfully`,
-        diary
-      });
-    } catch (error) {
-      res.status(500).send({
-        message: 'Internal Server Error',
-        error: error.message
-      });
-    }
-  };
-  
+//       const diary = await diaryModel.find({ title:title});
+//       console.log(diary)
+//       res.status(200).send({
+//         message: `Diaries matching the title '${title}' fetched successfully`,
+//         diary
+       
+//       });
+//       console.log(diary)
+//     } catch (error) {
+//       res.status(500).send({
+//         message: 'Internal Server Error',
+//         error: error.message,
+//       });
+//     }
+//   };
+
 
 export default{
     createDiary,
@@ -173,6 +180,6 @@ export default{
     getDiaryByUser,
     getAllDiarys,
     deleteDiary,
-    searchDiaryByName
+
 
 }
