@@ -1,0 +1,59 @@
+
+# 📙 Diary Manager
+
+diary management project is an all-in-one web application designed to streamline diary creation, storage, and access. Here's a concise overview
+
+
+## 🌐 overview
+
+This repository contains the backend codebase for the Diary Manager project. It provides the necessary APIs and functionalities to support user authentication, diary creation, management, and storage.
+## 🎯 Features
+
+* __User Authentication__ : 
+  Allows users to securely register, log in, and manage their accounts.
+
+* __Diary Managemen__ t: Enables users to create, read, update, and delete diary entries.
+
+* __Security__ : Implements JWT-based authentication for secure access to user data.
+*  __Database Integration__ : Utilizes MongoDB to store user information and diary entries.
+## 💻 Technologies Used:
+
+* __Node.js__: Backend server environment
+
+*  __Express.js__: Web application framework for Node.js
+*  __MongoDB__ : NoSQL database for data storage
+*  __JWT__ : JSON Web Tokens for authentication
+* __Other Dependencies__ : Specify any other major libraries or tools used
+## 📌 Setup Instructions
+
+1. __Clone the Repository__ :
+        https://github.com/Vijayarajvijay/Diary-Manager-Backend
+
+2. __Install Dependencies__ :
+
+                    npm install
+
+3. __Environment Configuration__ : 
+
+* Create a `.env` file based on the provided `.env.example` file.
+* Set environment variables like database connection details, secret keys, etc.
+
+4. __Run the Server__ :
+
+                       npm start
+
+5. __API Documentation__ :
+
+* Describe how to access and utilize the API endpoints.
+* Document the available routes, their methods, and expected request/response formats.
+
+6. __Live Demo__ :
+
+         https://wondrous-starburst-389739.netlify.app/
+
+7. __Postman__ :
+
+                dd
+###  __📝Frontend code__ :
+
+     https://github.com/Vijayarajvijay/Diary-Manager-FrontEnd/tree/main
