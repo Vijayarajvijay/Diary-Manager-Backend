@@ -53,7 +53,8 @@ This repository contains the backend codebase for the Diary Manager project. It 
 
 7. __Postman__ :
 
-                dd
+        https://documenter.getpostman.com/view/30449043/2s9YkrbzYj
+   
 ###  __📝Frontend code__ :
 
      https://github.com/Vijayarajvijay/Diary-Manager-FrontEnd/tree/main
